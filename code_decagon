@@ -1,0 +1,32 @@
+
+    //Decagon 10
+                glBegin(GL_LINE_LOOP);
+                glColor3f(0.0f, 0.0f, 1.0f);
+                glVertex3f(-0.72f,0.8f, 0.0f); //a1
+                glVertex3f(-0.52f,   0.8f,0.0f);  //z
+                glVertex3f(-0.35f,   0.64f, 0.0f); //b1
+                glVertex3f(-0.3f,   0.48f, 0.0f); //d1
+                glVertex3f(-0.35f,   0.3f, 0.0f); //e1
+                glVertex3f(-0.52f, 0.16f, 0.0f); //l1
+                glVertex3f(-0.72f, 0.16f, 0.0f); //m1
+                glVertex3f(-0.9f, 0.3f, 0.0f); //o1
+                glVertex3f(-0.95f, 0.48f, 0.0f); //p1
+                glVertex3f(-0.9f, 0.64f, 0.0f); //c1
+
+                glEnd();
+    
+    //Decagon 10.2
+                glBegin(GL_LINE_LOOP);
+                glColor3f(1.0f, 1.0f, 0.0f);
+                glVertex3f(-0.72f,0.8f, 1.0f); //a1
+                glVertex3f(-0.52f,   0.8f,1.0f);  //z
+                glVertex3f(-0.35f,   0.64f, 1.0f); //b1
+                glVertex3f(-0.3f,   0.48f, 1.0f); //d1
+                glVertex3f(-0.35f,   0.3f, 1.0f); //e1
+                glVertex3f(-0.52f, 0.16f, 1.0f); //l1
+                glVertex3f(-0.72f, 0.16f, 1.0f); //m1
+                glVertex3f(-0.9f, 0.3f, 1.0f); //o1
+                glVertex3f(-0.95f, 0.48f, 1.0f); //p1
+                glVertex3f(-0.9f, 0.64f, 1.0f); //c1
+
+                glEnd();
