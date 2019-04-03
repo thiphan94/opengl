@@ -2,7 +2,7 @@
 
 CC = gcc -g
 CINCLUDE  = -I$(MESA_PATH)/include 
-CLIB      = -L$(MESA_PATH)/lib -lGL -lGLU -lglut 
+CLIB      = -L$(MESA_PATH)/lib -lGL -lGLU -lglut  -lm
 
 
 COMPILE    = $(CC) $(CFLAGS)  $(CINCLUDE)  -c  

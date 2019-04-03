@@ -8,11 +8,11 @@ void display(void);
 
 void init(void) 
 {
-   glClearColor (0.0, 0.0, 0.0, 0.0);
+   glClearColor (0.0, 0.0, 1.0, 0.0);
    glClear (GL_COLOR_BUFFER_BIT);
    glClear (GL_DEPTH_BUFFER_BIT);
    glLoadIdentity ();
-   gluLookAt (0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
+   gluLookAt (0.0, 0.0, 10.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
 }
 
 
@@ -43,8 +43,8 @@ void keyboard(unsigned char key, int x, int y)
          break;
       case 'a':
          animate=!animate;
-	     if (animate)
-   		   glutTimerFunc(40, my_timer, 1);
+	 if (animate)
+   		glutTimerFunc(40, my_timer, 1);
          break;
    }
 }
@@ -52,7 +52,7 @@ void keyboard(unsigned char key, int x, int y)
 int main(int argc, char** argv)
 {
    glutInit(&argc, argv);
-   glutInitDisplayMode (GLUT_DEPTH|GLUT_DOUBLE|GLUT_RGB);
+   glutInitDisplayMode (GLUT_DEPTH|GLUT_DOUBLE| GLUT_RGB);
    glutInitWindowSize (300, 300); 
    glutInitWindowPosition (100, 100);
    glutCreateWindow (argv[0]);

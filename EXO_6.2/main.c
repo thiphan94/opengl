@@ -8,11 +8,11 @@ void display(void);
 
 void init(void) 
 {
-   glClearColor (0.0, 0.0, 1.0, 0.0);
+   glClearColor (0.0, 0.0, 0.0, 0.0);
    glClear (GL_COLOR_BUFFER_BIT);
    glClear (GL_DEPTH_BUFFER_BIT);
    glLoadIdentity ();
-   gluLookAt (0.0, 0.0, 10.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
+   gluLookAt (0.0, 0.0, -2.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
 }
 
 
@@ -31,7 +31,7 @@ void reshape (int w, int h)
    glViewport (0, 0, (GLsizei) w, (GLsizei) h); 
    glMatrixMode (GL_PROJECTION);
    glLoadIdentity ();
-   glFrustum (-1.0, 1.0, -1.0, 1.0, 1.5, 20.0);
+   gluPerspective(120,w/h,0.1,120);
    glMatrixMode (GL_MODELVIEW);
 }
 
@@ -53,7 +53,7 @@ int main(int argc, char** argv)
 {
    glutInit(&argc, argv);
    glutInitDisplayMode (GLUT_DEPTH|GLUT_DOUBLE| GLUT_RGB);
-   glutInitWindowSize (300, 300); 
+   glutInitWindowSize (600, 600); 
    glutInitWindowPosition (100, 100);
    glutCreateWindow (argv[0]);
    init ();
