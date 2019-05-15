@@ -5,9 +5,13 @@ int animate=1;
 
 void display(void);
 
+extern float ex;
+extern float ey;
+extern float ez;
 
 void init(void) 
 {
+   init_texture();
    glClearColor (0.0, 0.0, 1.0, 0.0);
    glClear (GL_COLOR_BUFFER_BIT);
    glClear (GL_DEPTH_BUFFER_BIT);
@@ -43,11 +47,32 @@ void keyboard(unsigned char key, int x, int y)
          break;
       case 'a':
          animate=!animate;
-	 if (animate)
-   		 glutTimerFunc(40, my_timer, 1);
+	     if (animate)
+   		    glutTimerFunc(40, my_timer, 1);
+         break;
+      case 'x':
+         ex=ex+0.05;
+         break;
+      case 'X':
+         ex=ex-0.05;
+         break;
+      case 'y':
+         ey=ey+0.05;
+         break;
+      case 'Y':
+         ey=ey-0.05;
+         break;
+      case 'z':
+         ez=ez+0.05;
+         break;
+      case 'Z':
+         ez=ez-0.05;
          break;
    }
+   glutPostRedisplay();
 }
+
+
 
 int main(int argc, char** argv)
 {
