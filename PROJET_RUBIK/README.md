@@ -6,6 +6,8 @@ Command to run code:
 
 Ce projet a deux versions: l'un automatique et l'autre est déplacé à travers de clavier.
 
+![](rubik.gif)
+
 Version callback:
 
     /*************Guide d'utilisation**********
