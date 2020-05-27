@@ -17,4 +17,4 @@ Version callback:
     y/Y pour déplacer en y la position du point de vue
     z/Z pour déplacer en z la position du point de vue
     /*****************************************/
-![](callback.gif)
+![](v2.gif)
